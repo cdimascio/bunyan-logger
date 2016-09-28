@@ -1,6 +1,6 @@
 {
   "name": "bunyan-node-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a simple bunyan based logger",
   "main": "dist/index.js",
   "scripts": {
