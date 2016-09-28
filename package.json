@@ -1,0 +1,30 @@
+{
+  "name": "bunyan-node-logger",
+  "version": "1.0.1",
+  "description": "a simple bunyan based logger",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "rm -rf dist; ./node_modules/.bin/babel lib -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdimascio/bunyan-node-logger.git"
+  },
+  "keywords": [
+    "bunyan"
+  ],
+  "author": "Carmine DiMascio <cdimascio@gmail.com> (https://github.com/cdimascio)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdimascio/bunyan-node-logger/issues"
+  },
+  "homepage": "https://github.com/cdimascio/bunyan-node-logger#readme",
+  "dependencies": {
+    "bunyan": "^1.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0"
+  }
+}
