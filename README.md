@@ -10,7 +10,7 @@ A simple bunyan based logger for Node.js
 
 Define the sitewide application id and log level
 
-```
+```javascript
 require('../dist').configure({
   appId: 'TestApp',
   level: 'debug'
@@ -20,14 +20,14 @@ require('../dist').configure({
 ###Log messages
 Create a logger instance
 
-```
+```javascript
 const Logger = require('bunyan-node-logger').default;
 const l = new Logger('MyModules');
 ```
 
 Log messages
 
-```
+```javascript
 l.info('main', {id: 1, name: 'sam'});
 l.error('main', 'yikes!!!');
 ```
@@ -56,7 +56,7 @@ This repo contains a simple example. To run it, execute:
 ## Example
 Below is a simple example. See exmples/ex1.js
 
-```
+```javascript
 const Logger = require('bunyan-node-logger').default;
 // configure the app wide log level and app name
 require('bunyan-node-logger').configure({
@@ -76,7 +76,7 @@ class MyClass {
 ```
 ####output: 
 
-```
+```json
 {"name":"TestApp","hostname":"Carmines-MacBook-Pro-7.local","pid":18620,"level":30,"module":"MyApp","method":"main","msg":"my app is starting","time":"2016-09-28T00:58:19.688Z","v":0}
 {"name":"TestApp","hostname":"Carmines-MacBook-Pro-7.local","pid":18620,"level":20,"module":"MyClass","method":"myMethod","msg":"{ key: 'value' }","time":"2016-09-28T00:58:19.689Z","v":0}
 {"name":"TestApp","hostname":"Carmines-MacBook-Pro-7.local","pid":18620,"level":30,"module":"MyApp","method":"main","msg":"my app is finished","time":"2016-09-28T00:58:19.689Z","v":0}
